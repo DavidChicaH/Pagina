@@ -1,8 +1,13 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-/* container-lider*/
+footer{
+    background-color: #908f61;
+}
+/* CSS PARA EL CAROUSEL*/
 .carousel-section{
 width: 90%;
 max-width: 900px;
@@ -13,7 +18,7 @@ box-shadow: 0 0 0 10px #14301f,
 position: relative;
 }
 
-/*Slider*/
+
 .carousel{
     display: flex;
     width: 400%;
@@ -21,7 +26,7 @@ position: relative;
     margin-left: -100%;
 }
 
-/*slider__section*/
+
 .slider-div{
 width: 100%;
 }
@@ -32,15 +37,6 @@ width: 100%;
     object-fit: cover;
 }
 
-.slider-div p, h5{
-    color: white;
-    text-align: center;
-    top: 85%;
-    position: absolute;
-    transform: translateY(-50%); 
-   
-    
-}
 .carousel_btn{
 position: absolute;
 width: 40px;
@@ -67,3 +63,68 @@ right: 10px;
 .btn-left{
 left: 10px;
 }
+/*FIN DEL CSS PARA EL CAROUSEL*/
+
+
+/*CSS PARA EL BOTON DE SUBIR*/
+.go-top-container{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1 ;
+}
+
+.go-top-btn{
+    width: 0rem;
+    height: 0rem;
+    background: #3d4f21;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.go-top-btn i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-btn{
+    animation: popup .3s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
+/*FIN DEL CSS PARA EL BOTON SUBIR*/
+
