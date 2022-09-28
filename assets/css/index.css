@@ -14,7 +14,7 @@ body {
 
 
 .navbar {
-    background-color: #0d1d27;
+   
     height: 70px;
     width: 100%;
     display: flex;
@@ -28,19 +28,18 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
     gap: 2em;
 }
 
 .navbar__li a {
-    color: #fefefe;
+    color: #0e0e0e;
     font-size: 1.2em;
     font-family: 'Source Sans Pro';
 }
 
 .navbar__li a:hover {
-    color: #dbd6d6; 
-    background-color: #122735d3;
+    color: #fff;
+    background-color: #123526d3;
     border-radius: 8%;
     padding: 8px;
     transition: 0.3s;
@@ -49,7 +48,7 @@ body {
 .txtHead {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/Natural.jpg);
+    background-image: url(../img/plantas.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -62,7 +61,7 @@ body {
 .txtHead__div {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     align-items: center;
 }
 .txtHead__h1, .txtHead__p {
