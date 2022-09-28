@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-   
+   background-color: #fefefe;
 }
 
 
@@ -40,6 +40,10 @@ body {
 
 .navbar__li a:hover {
     color: #dbd6d6; 
+    background-color: #122735d3;
+    border-radius: 8%;
+    padding: 8px;
+    transition: 0.3s;
 }
 
 .txtHead {
@@ -49,13 +53,29 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-}
-
-.txtHead__h1, .txtHead__p {
-    color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
+}
+.txtHead__div {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+}
+.txtHead__h1, .txtHead__p {
+    color: #fff;
+}
+
+.txtHead__p  {
+    font-size: 18px;
+    text-align: center;
+}
+
+.txtHead__h1 {
+    margin: 20px 0;
+    font-size: 4em;
+    font-weight: 600;
 }
