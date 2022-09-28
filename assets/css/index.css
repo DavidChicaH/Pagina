@@ -25,7 +25,6 @@ position: relative;
 .slider-div{
 width: 100%;
 }
-
 .img_slider{
     display: block;
     width: 100%;
@@ -33,6 +32,15 @@ width: 100%;
     object-fit: cover;
 }
 
+.slider-div p, h5{
+    color: white;
+    text-align: center;
+    top: 85%;
+    position: absolute;
+    transform: translateY(-50%); 
+   
+    
+}
 .carousel_btn{
 position: absolute;
 width: 40px;
