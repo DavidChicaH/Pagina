@@ -20,3 +20,31 @@ header {
     background-size: cover;
 
 }
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    
+}
+
+.navbar__ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.8em 4em;
+    gap: 2em;
+}
+
+.navbar__li a {
+    color: #fefefe;
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro';
+}
+
+.navbar__li a:hover {
+    color: #dbd6d6;
+   
+}
