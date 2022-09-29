@@ -92,7 +92,7 @@ float: left;
     color: #3d4f21;
 }
 
-.boton-encabezado button:hover{
+.boton-encabezado button:hover, .tabla-sedes button:hover{
     background-color: #3d4f21 ;
     box-shadow: 0 0 15px 5px #3d4f21;
     color: #fff;
@@ -103,7 +103,6 @@ float: left;
     height: 700px;
     display: block;
     justify-content: center;
-    background-color: #000;
     text-align: center;
     float: left;
 }
@@ -115,13 +114,30 @@ float: left;
 
 .tabla-sedes{
     width: 70%;
-    height: 60%;
+    height: 40%;
     margin: auto;
-    background-color: wheat;
     display: flex;
 }
 
+.tabla-sedes button{
+    width: 90%;
+    height: 90%;
+    background-color: #f9f9f6;
+    border-radius: 30px;
+    border: 3px solid #3d4f21;
+    font-weight: bold;
+    color: #3d4f21;
+}
 
+table{
+    width: 100%;
+    height: 50%;
+    margin-top: 100px;
+}
+
+table, tr, td{
+  border: none;
+}
 
 .planeta{
     width: 45%;
