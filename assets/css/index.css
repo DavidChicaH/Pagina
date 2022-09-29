@@ -20,12 +20,11 @@ body {
 }
 
 .navbar__ul i {
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
-    color: #0e0e0e;
-    cursor: pointer;
-    
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: #0e0e0e;
+  cursor: pointer;
 }
 
 .navbar__ul {
@@ -69,6 +68,8 @@ body {
 .txtHead__h1,
 .txtHead__p {
   color: #fff;
+  animation: bounceInUp;
+  animation-duration: 3s;
 }
 
 .txtHead__p {
@@ -80,6 +81,7 @@ body {
   margin: 20px 0;
   font-size: 4em;
   font-weight: 600;
+ 
 }
 
 .txtHead__boton {
@@ -92,6 +94,6 @@ body {
   text-decoration: none;
   color: #0e0e0e;
 }
-.txtHead__boton:hover{
-    background-color: #dfdfdfee;
+.txtHead__boton:hover {
+  background-color: #dfdfdfee;
 }
