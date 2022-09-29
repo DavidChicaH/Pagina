@@ -49,7 +49,7 @@ setInterval(function(){
 
 //CODIGO PARA EL BOTON SUBIR
 window.onscroll = function(){
-    if(document.documentElement.scrollTop > 100){
+    if(document.documentElement.scrollTop > 3000){
         document.querySelector(".go-top-container")
         .classList.add("show");
     }else{
