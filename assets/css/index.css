@@ -95,3 +95,258 @@ body {
 .txtHead__boton:hover{
     background-color: #dfdfdfee;
 }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* section 1 */
+.section-1 {
+    padding: 20vmin 0vmin;
+  }
+  
+  .section-1 .row .col-md-6 .pray img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+  }
+  
+  .section-1 .row .col-md-6:last-child {
+    position: relative;
+  }
+  
+  .section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+  }
+  
+  .section-1 .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+  }
+  
+  .section-1 .row .col-md-6 .panel p {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+
+
+
+/* section 2 */
+
+.container {
+    margin-top: 8%;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+    margin: 0%;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+
+.encabezado{
+    width: 800px;
+    height: 200px;
+    float: left;
+    
+    }
+    
+    .encabezado h2{
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        margin-top: 65px;
+        font-weight: bold;
+        color: #3d4f21;
+        font-size: 60px;
+        
+    }
+    
+    .boton-encabezado{
+        width: 800px;
+        height: 200px;
+        float: right;
+    
+    }
+    
+    .boton-encabezado button{
+        width: 50%;
+        height: 30%;
+        margin-left: 25%;
+        margin-top: 75px;
+        background-color: #f9f9f6;
+        border-radius: 30px;
+        border: 3px solid #3d4f21;
+        font-weight: bold;
+        color: #3d4f21;
+    }
+    
+    .boton-encabezado button:hover, .tabla-sedes button:hover{
+        background-color: #3d4f21 ;
+        box-shadow: 0 0 15px 5px #3d4f21;
+        color: #fff;
+    }
+    
+    .sedes{
+        width: 55%;
+        height: 700px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        float: left;
+    }
+    
+    .sedes p{
+        padding: 70px;
+        font-size: 20px;
+    }
+    
+    .tabla-sedes{
+        width: 70%;
+        height: 40%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .tabla-sedes button{
+        width: 90%;
+        height: 90%;
+        background-color: #f9f9f6;
+        border-radius: 30px;
+        border: 3px solid #3d4f21;
+        font-weight: bold;
+        color: #3d4f21;
+    }
+    
+    table{
+        width: 100%;
+        height: 50%;
+        margin-top: 100px;
+    }
+    
+    table, tr, td{
+      border: none;
+    }
+    
+    .planeta{
+        width: 45%;
+        height: 700px;
+        display: flex;
+    
+    }
+    
+    .planet{
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        border-radius: 50%;
+        background: url("../img/planeta.png");
+        background-size: cover;
+        position: relative;
+      box-shadow: inset 0 0 20px #000,
+                  inset -40px -10px 20px rgba(3, 32, 56, 0.7);
+    
+        animation: planetmove 5s linear infinite;
+    }
+    
+    @keyframes planetmove{
+        0%{
+            background-position-x: 0;
+        }100%{
+            background-position-x: -800px;
+        }
+    }
+    
+/* footer */
+.footer {
+    padding: 40px 0;
+    background-color: #908f9061;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #3d4f21;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #3d4f21;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .ul li a:hover {
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #0c320c;
+}
+.contenedor-planeta{
+    width: 1600px;
+    height: 900px;
+    margin: auto;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
