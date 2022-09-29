@@ -94,14 +94,3 @@ button {
 .txtHead__boton:hover{
     background-color: #dfdfdfee;
 }
-
-
-.navbar__boton a{
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 20px;
-    padding: 10px 16px;
-    border: 1px #123526d3;
-    text-decoration: none;
-    color: #0e0e0e;
-}
