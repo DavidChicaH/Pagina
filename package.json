@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   "name": "Pagina",
   "version": "1.0.0",
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/DavidChicaH/Pagina#readme",
 >>>>>>> thomasbranch
+=======
+>>>>>>> davidbranch
   "dependencies": {
     "bootstrap": "^5.2.1"
   }

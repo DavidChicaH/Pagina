@@ -95,12 +95,7 @@ body {
 .txtHead__boton:hover{
     background-color: #dfdfdfee;
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-}
+
 /* section 1 */
 .section-1 {
     padding: 20vmin 0vmin;
@@ -347,6 +342,125 @@ body {
 }
 
 
+/* CSS PARA EL CAROUSEL*/
+.carousel-section{
+width: 90%;
+max-width: 900px;
+margin: auto;
+overflow: hidden;
+box-shadow: 0 0 0 10px #14301f,
+            0 15px 50px;
+position: relative;
+margin-top: 50px;
+}
 
 
+.carousel{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+
+.slider-div{
+width: 100%;
+}
+.img_slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel_btn{
+position: absolute;
+width: 40px;
+height: 40px;
+background-color: #908f61;
+top: 50%;
+transform: translateY(-50%); 
+font-size: 30px;
+font-weight: bold;
+font-family: monospace;
+text-align: center;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.carousel_btn:hover{
+background-color: #f9f9f6;
+}
+
+.btn-right{
+right: 10px;
+}
+
+.btn-left{
+left: 10px;
+}
+/*FIN DEL CSS PARA EL CAROUSEL*/
+
+
+/*CSS PARA EL BOTON DE SUBIR*/
+.go-top-container{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1 ;
+}
+
+.go-top-btn{
+    width: 0rem;
+    height: 0rem;
+    background: #3d4f21;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.go-top-btn i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-btn{
+    animation: popup .3s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
+/*FIN DEL CSS PARA EL BOTON SUBIR*/
 
