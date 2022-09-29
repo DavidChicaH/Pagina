@@ -38,6 +38,7 @@ body {
   color: #0e0e0e;
   font-size: 1.2em;
   font-family: "Source Sans Pro";
+  text-decoration: none;
 }
 
 .navbar__li a:hover {
@@ -69,6 +70,8 @@ body {
 .txtHead__h1,
 .txtHead__p {
   color: #fff;
+  animation: bounceInUp;
+  animation-duration: 3s;
 }
 
 .txtHead__p {
