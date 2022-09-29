@@ -85,7 +85,7 @@ button {
   background-color: #fefefe;
   border-radius: 20px;
   margin: 20px;
-  padding: 12px 16px;
+  padding: 12px 45px;
 }
 .txtHead__boton a {
   text-decoration: none;
@@ -95,12 +95,10 @@ button {
     background-color: #dfdfdfee;
 }
 
-.navbar__boton {
-    border-radius: 20px;
-    padding: 10px 16px;
-    border: 1px #123526d3;
-}
+
 .navbar__boton a{
+    display: flex;
+    justify-content: flex-end;
     border-radius: 20px;
     padding: 10px 16px;
     border: 1px #123526d3;
