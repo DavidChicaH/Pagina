@@ -19,12 +19,13 @@ body {
   justify-content: center;
 }
 
-button {
-    width: 20px;
-    height: 20px;
+.navbar__ul i {
+    width: 30px;
+    height: 30px;
     font-size: 30px;
     color: #0e0e0e;
     cursor: pointer;
+    
 }
 
 .navbar__ul {
