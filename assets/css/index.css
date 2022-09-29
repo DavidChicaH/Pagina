@@ -97,9 +97,6 @@ body {
 }
 
 /* section 1 */
-.section-1 {
-    padding: 20vmin 0vmin;
-  }
   
   .section-1 .row .col-md-6 .pray img {
     opacity: 0.8;
@@ -464,3 +461,10 @@ left: 10px;
 }
 /*FIN DEL CSS PARA EL BOTON SUBIR*/
 
+h3{
+  text-align: center;
+  justify-content: center;
+  color: #0c320c;
+  font-weight: bold;
+  font-size: 60px;
+}
