@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
 .contenedor-info{
     display: flex;
     justify-content: space-evenly;
@@ -39,3 +45,114 @@
 .inner:hover img {
     transform: scale(1.5);
 }
+
+.contenedor-planeta{
+    width: 1600px;
+    height: 900px;
+    margin: auto;
+
+    margin-bottom: 20px;
+
+}
+
+.encabezado{
+width: 800px;
+height: 200px;
+float: left;
+
+}
+
+.encabezado h2{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 65px;
+    font-weight: bold;
+    color: #3d4f21;
+    font-size: 60px;
+    
+}
+
+.boton-encabezado{
+    width: 800px;
+    height: 200px;
+    float: right;
+
+}
+
+.boton-encabezado button{
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+    margin-top: 75px;
+    background-color: #f9f9f6;
+    border-radius: 30px;
+    border: 3px solid #3d4f21;
+    font-weight: bold;
+    color: #3d4f21;
+}
+
+.boton-encabezado button:hover{
+    background-color: #3d4f21 ;
+    box-shadow: 0 0 15px 5px #3d4f21;
+    color: #fff;
+}
+
+.sedes{
+    width: 55%;
+    height: 700px;
+    display: block;
+    justify-content: center;
+    background-color: #000;
+    text-align: center;
+    float: left;
+}
+
+.sedes p{
+    padding: 70px;
+    font-size: 20px;
+}
+
+.tabla-sedes{
+    width: 70%;
+    height: 60%;
+    margin: auto;
+    background-color: wheat;
+    display: flex;
+}
+
+
+
+.planeta{
+    width: 45%;
+    height: 700px;
+    display: flex;
+
+}
+
+.planet{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 50%;
+    background: url("../img/planeta.png");
+    background-size: cover;
+    position: relative;
+  box-shadow: inset 0 0 20px #000,
+              inset -40px -10px 20px rgba(3, 32, 56, 0.7);
+
+    animation: planetmove 5s linear infinite;
+}
+
+@keyframes planetmove{
+    0%{
+        background-position-x: 0;
+    }100%{
+        background-position-x: -800px;
+    }
+}
+
+
+
+
+
