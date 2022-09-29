@@ -1,80 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-   background-color: #fefefe;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fefefe;
 }
 
-
 .navbar {
-   
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-   
-
-    
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar__ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
 }
 
 .navbar__li a {
-    color: #0e0e0e;
-    font-size: 1.2em;
-    font-family: 'Source Sans Pro';
+  color: #0e0e0e;
+  font-size: 1.2em;
+  font-family: "Source Sans Pro";
 }
 
 .navbar__li a:hover {
-    color: #fff;
-    background-color: #123526d3;
-    border-radius: 8%;
-    padding: 8px;
-    transition: 0.3s;
+  color: #fff;
+  background-color: #123526d3;
+  border-radius: 20px;
+  padding: 10px 16px;
+  transition: 0.3s;
 }
 
 .txtHead {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/plantas.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/plantas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .txtHead__div {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
 }
-.txtHead__h1, .txtHead__p {
-    color: #fff;
+.txtHead__h1,
+.txtHead__p {
+  color: #fff;
 }
 
-.txtHead__p  {
-    font-size: 18px;
-    text-align: center;
+.txtHead__p {
+  font-size: 18px;
+  text-align: center;
 }
 
 .txtHead__h1 {
-    margin: 20px 0;
-    font-size: 4em;
-    font-weight: 600;
+  margin: 20px 0;
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.txtHead__boton {
+  background-color: #fefefe;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 12px 16px;
+}
+.txtHead__boton a {
+  text-decoration: none;
+  color: #0e0e0e;
+}
+.txtHead__boton:hover{
+    background-color: #dfdfdfee;
 }
