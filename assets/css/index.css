@@ -19,9 +19,16 @@ body {
   justify-content: center;
 }
 
+button {
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    color: #0e0e0e;
+    cursor: pointer;
+}
+
 .navbar__ul {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   gap: 2em;
 }
