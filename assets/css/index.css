@@ -17,6 +17,13 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 0;
+}
+
+.navbar__logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .navbar__ul i {
@@ -36,7 +43,7 @@ body {
 
 .navbar__li a {
   color: #0e0e0e;
-  font-size: 1.2em;
+  font-size: 20px;
   font-family: "Source Sans Pro";
   text-decoration: none;
 }
