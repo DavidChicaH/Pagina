@@ -1,11 +1,9 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  "name": "Pagina",
+
+  "name": "pagina",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Pagina de cultivos hidroponicos",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,15 +12,13 @@
     "url": "git+https://github.com/DavidChicaH/Pagina.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Maria Jose Torres, Thomas Gonzalez, David Alejandro Chica",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DavidChicaH/Pagina/issues"
   },
   "homepage": "https://github.com/DavidChicaH/Pagina#readme",
->>>>>>> thomasbranch
-=======
->>>>>>> davidbranch
+
   "dependencies": {
     "bootstrap": "^5.2.1"
   }
