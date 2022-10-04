@@ -1,18 +1,18 @@
 //CODIGO PARA EL CAROUSEL
 const carousel = document.querySelector("#carousel");
 let sliderSection = document.querySelectorAll(".slider-div");
-let sliderLast = sliderSection[sliderSection.length -1];
+let sliderLast = sliderSection[sliderSection.length - 1];
 
 const leftBtn = document.querySelector("#btn-left");
 const rightBtn = document.querySelector("#btn-right");
 
 carousel.insertAdjacentElement('afterbegin', sliderLast);
 
-function moveRight(){
+function moveRight() {
     let sliderSectionFirst = document.querySelectorAll(".slider-div")[0];
     carousel.style.marginLeft = "-200%";
     carousel.style.transition = "all 0.5s";
-    setTimeout(function(){
+    setTimeout(function () {
         carousel.style.transition = "none";
         carousel.insertAdjacentElement('beforeend', sliderSectionFirst)
         carousel.style.marginLeft = "-100%";
@@ -20,51 +20,51 @@ function moveRight(){
 }
 
 
-rightBtn.addEventListener('click', function(){
+rightBtn.addEventListener('click', function () {
     moveRight();
 });
 
-function moveLeft(){
+function moveLeft() {
     let sliderSection = document.querySelectorAll(".slider-div");
-    let sliderLast = sliderSection[sliderSection.length -1];
+    let sliderLast = sliderSection[sliderSection.length - 1];
     carousel.style.marginLeft = "0";
     carousel.style.transition = "all 0.5s";
-    setTimeout(function(){
+    setTimeout(function () {
         carousel.style.transition = "none";
         carousel.insertAdjacentElement('afterbegin', sliderLast)
         carousel.style.marginLeft = "-100%";
     }, 500);
 }
 
-leftBtn.addEventListener('click', function(){
+leftBtn.addEventListener('click', function () {
     moveLeft();
 });
 
-setInterval(function(){
+setInterval(function () {
     moveRight();
 }, 5000);
-            //FIN DEL CODIGO DE CAROUSEL
 
+//FIN DEL CODIGO DE CAROUSEL
 
 
 //CODIGO PARA EL BOTON SUBIR
-window.onscroll = function(){
-    if(document.documentElement.scrollTop > 3000){
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 3000) {
         document.querySelector(".go-top-container")
-        .classList.add("show");
-    }else{
+            .classList.add("show");
+    } else {
         document.querySelector(".go-top-container")
-        .classList.remove("show");
+            .classList.remove("show");
     }
 }
 
 document.querySelector(".go-top-container")
-.addEventListener("click", () =>{
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    .addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
-});
 // console.log(document.documentElement.scrollTop)
 // utilizar esta linea para ver cuantos pixeles ha bajado
 
