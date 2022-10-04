@@ -23,7 +23,7 @@ body {
     width: 30px;
     height: 30px;
     font-size: 30px;
-    color: #0e0e0e;
+    color: #0c320c;
     cursor: pointer;
     
 }
@@ -43,7 +43,7 @@ body {
 
 .navbar__li a:hover {
   color: #fff;
-  background-color: #0c320c;
+  background-color: #3d4f21;
   border-radius: 20px;
   padding: 10px 16px;
   transition: 0.3s;
@@ -75,7 +75,7 @@ body {
 }
 
 .txtHead__p {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 
