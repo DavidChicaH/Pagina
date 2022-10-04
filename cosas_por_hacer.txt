@@ -1,0 +1,3 @@
+Cambiar las imagenes a enlaces
+Reducir el tamaño de las mismas
+dividir por el nombre correcto de cada rama
