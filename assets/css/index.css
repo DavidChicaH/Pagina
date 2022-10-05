@@ -40,20 +40,11 @@ body {
 }
 
 .navbar__ul i {
-<<<<<<< HEAD
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
-    color: #0c320c;
-    cursor: pointer;
-    
-=======
   width: 30px;
   height: 30px;
   font-size: 30px;
   color: #0e0e0e;
   cursor: pointer;
->>>>>>> 93b5356d16803c708b51a0168eef95fa18ca9f32
 }
 
 .navbar__ul {
@@ -131,7 +122,6 @@ body {
   text-decoration: none;
   color: #0e0e0e;
 }
-<<<<<<< HEAD
 
 .txtHead__boton:hover {
   background-color: #dfdfdfee;
@@ -418,10 +408,6 @@ h3 {
   color: #0c320c;
   font-weight: bold;
   font-size: 60px;
-=======
-.txtHead__boton:hover {
-  background-color: #dfdfdfee;
->>>>>>> 93b5356d16803c708b51a0168eef95fa18ca9f32
 }
 
 .carousel-section {
