@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 #Ignora node_modules
 node_modules
+=======
+/node_modules
+/.vscode
+/assets/img/*
+>>>>>>> c783bcf63c864ee8ec33da23875959db2400aa6f

@@ -40,12 +40,11 @@ body {
 }
 
 .navbar__ul i {
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
-    color: #0c320c;
-    cursor: pointer;
-    
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: #0e0e0e;
+  cursor: pointer;
 }
 
 .navbar__ul {
@@ -109,6 +108,7 @@ body {
   margin: 20px 0;
   font-size: 4em;
   font-weight: 600;
+ 
 }
 
 .txtHead__boton {
