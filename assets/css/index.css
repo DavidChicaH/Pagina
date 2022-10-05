@@ -1,0 +1,540 @@
+/* tipo de letra */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
+
+
+/* estilo delcontenido global de la pagina*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* fin del estilo global */
+
+
+/* estilo cuerpo de la pagina */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fefefe;
+}
+
+/* estilo cuerpo de la pagina */
+
+
+/* menú navegación */
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.navbar__logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: 0;
+}
+
+.navbar__ul i {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: #0e0e0e;
+  cursor: pointer;
+}
+
+.navbar__ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.navbar__li a {
+  color: #0e0e0e;
+  font-size: 20px;
+  font-family: "Source Sans Pro";
+  text-decoration: none;
+}
+
+.navbar__li a:hover {
+  color: #fff;
+  background-color: #3d4f21;
+  border-radius: 20px;
+  padding: 10px 16px;
+  transition: 0.3s;
+}
+
+/* fin menú navegación */
+
+
+/* imagen principal */
+.txtHead {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/plantas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtHead__div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+
+.txtHead__h1,
+.txtHead__p {
+  color: #fff;
+  animation: bounceInUp;
+  animation-duration: 3s;
+}
+
+.txtHead__p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.txtHead__h1 {
+  margin: 20px 0;
+  font-size: 4em;
+  font-weight: 600;
+ 
+}
+
+.txtHead__boton {
+  background-color: #fefefe;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 12px 45px;
+}
+
+.txtHead__boton a {
+  text-decoration: none;
+  color: #0e0e0e;
+}
+
+.txtHead__boton:hover {
+  background-color: #dfdfdfee;
+}
+
+/* fin imagen principal */
+
+
+/* contenedor de texto misión, visión */
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 1em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10vmin 10vmin 15vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: none;
+  font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: #0c320c;
+}
+
+/* fin contenedor de texto */
+
+
+/* tarjetas de informacion */
+.container {
+  margin-top: 8%;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+  margin: 0%;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+}
+
+/* tarjetas de informacion */
+
+
+/* linea separador */
+.line {
+  width: 80%;
+  margin: 10px auto 20px;
+  border-bottom: 1px solid gray;
+}
+
+/* fin linea separador */
+
+
+/* seccion texto con planeta */
+.encabezado {
+  width: 800px;
+  height: 200px;
+  float: left;
+
+}
+
+.encabezado h2 {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 65px;
+  font-weight: bold;
+  color: #3d4f21;
+  font-size: 60px;
+
+}
+
+.boton-encabezado {
+  width: 800px;
+  height: 200px;
+  float: right;
+
+}
+
+.boton-encabezado button {
+  width: 50%;
+  height: 30%;
+  margin-left: 25%;
+  margin-top: 75px;
+  background-color: #f9f9f6;
+  border-radius: 30px;
+  border: 3px solid #3d4f21;
+  font-weight: bold;
+  color: #3d4f21;
+}
+
+.boton-encabezado button:hover,
+.tabla-sedes button:hover {
+  background-color: #3d4f21;
+  box-shadow: 0 0 15px 5px #3d4f21;
+  color: #fff;
+}
+
+.sedes {
+  width: 55%;
+  height: 700px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  float: left;
+}
+
+.sedes p {
+  padding: 70px;
+  font-size: 20px;
+}
+
+.tabla-sedes {
+  width: 70%;
+  height: 40%;
+  margin: auto;
+  display: flex;
+}
+
+.tabla-sedes button {
+  width: 90%;
+  height: 90%;
+  background-color: #f9f9f6;
+  border-radius: 30px;
+  border: 3px solid #3d4f21;
+  font-weight: bold;
+  color: #3d4f21;
+}
+
+table {
+  width: 100%;
+  height: 50%;
+  margin-top: 100px;
+}
+
+table,
+tr,
+td {
+  border: none;
+}
+
+
+/* estilos para el planeta */
+.planeta {
+  width: 45%;
+  height: 700px;
+  display: flex;
+
+}
+
+.planet {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border-radius: 50%;
+  background: url("../img/planeta.png");
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0 0 20px #000,
+    inset -40px -10px 20px rgba(3, 32, 56, 0.7);
+
+  animation: planetmove 5s linear infinite;
+}
+
+/* animacion del paneta */
+@keyframes planetmove {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -800px;
+  }
+}
+
+/* fin estilos para el planeta */
+
+/* seccion texto con planeta */
+
+
+/* footer */
+.footer {
+  padding: 40px 0;
+  background-color: #908f9061;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #3d4f21;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #3d4f21;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .ul li a:hover {
+  opacity: 1;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #0c320c;
+}
+
+.contenedor-planeta {
+  width: 1600px;
+  height: 900px;
+  margin: auto;
+
+  margin-bottom: 20px;
+
+}
+
+/* fin del footer */
+
+
+/* CSS PARA EL CAROUSEL*/
+h3 {
+  text-align: center;
+  justify-content: center;
+  color: #0c320c;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.carousel-section {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 0 10px #14301f,
+    0 15px 50px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.carousel {
+  display: flex;
+  width: 400%;
+  height: 400px;
+  margin-left: -100%;
+}
+
+
+.slider-div {
+  width: 100%;
+}
+
+.img_slider {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel_btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #908f61;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel_btn:hover {
+  background-color: #f9f9f6;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+/*FIN DEL CSS PARA EL CAROUSEL*/
+
+
+/*CSS PARA EL BOTON DE SUBIR*/
+.go-top-container {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: -1;
+}
+
+.go-top-btn {
+  width: 0rem;
+  height: 0rem;
+  background: #3d4f21;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-btn i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: .2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-btn {
+  animation: popup .3s ease-in-out;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* animacion del boton para volver al inicio */
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
+
+/*FIN DEL CSS PARA EL BOTON SUBIR*/
