@@ -1,7 +1,8 @@
 
 #Ignora node_modules
-node_modules
-
+*.png
+*.jpg
+*.jpeg
 /node_modules
 /.vscode
 /assets/img/*.*
