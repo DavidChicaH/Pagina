@@ -11,6 +11,10 @@
   list-style: none;
 }
 
+
+html{
+  overflow-x: hidden;
+}
 /* fin del estilo global */
 
 
@@ -18,14 +22,39 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #fefefe;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
 
 /* estilo cuerpo de la pagina */
 
 
 /* menú navegación */
+header{
+  width: 100%;
+  height: auto;
+}
+
+#btn-menu{
+  display: none;
+  height: auto;
+}
+
+
+header label{
+  display: none;
+  width: 30px;
+  height: auto;
+  padding: 10px;
+}
+
+header label:hover{
+  cursor: pointer;
+}
+
 .navbar {
-  height: 70px;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -67,6 +96,38 @@ body {
   border-radius: 20px;
   padding: 10px 16px;
   transition: 0.3s;
+}
+
+@media (max-width: 552px){
+header label{
+  display: block;
+}
+
+.navbar{
+  position: absolute; 
+  background: #fff;
+  width: 60%;
+  margin-left: -70%;
+  transition: all 1s;
+  border-bottom-right-radius: 10px;
+}
+
+.navbar__ul{
+  flex-direction: column;
+}
+
+.navbar__li{
+  border-bottom: 1px solid #3d4f21;
+}
+
+.navbar__logo{
+  display: none;
+}
+
+#btn-menu:checked ~ .navbar{
+  margin: 0;
+}
+
 }
 
 /* fin menú navegación */
@@ -166,6 +227,69 @@ body {
   color: #0c320c;
 }
 
+
+
+
+@media (max-width: 1199px){
+  .section-1 .row .col-md-6 .panel{
+ top: 0;
+ padding: 25px;
+  }
+  .section-1 .row .col-md-6 .panel h1{
+    font-size: 1.7em;
+    padding: 0;
+  }
+}
+@media (max-width: 991px){
+  .section-1 .row .col-md-6 .panel{
+    display: block;
+     }
+     .section-1 .row .col-md-6 .panel p {
+      font-size: 0.8em;
+ 
+    }
+}
+
+@media (max-width: 767px){
+
+ .section-1 .row .col-md-6 .panel{
+  top: -53vmin;
+  left: 0;
+ }
+}
+
+@media (max-width: 645px){
+  .section-1 .row .col-md-6 .panel{
+    top: -60vmin;
+  }
+}
+
+@media (max-width: 542px){
+  .section-1 .row .col-md-6 .panel{
+    top: -70vmin;
+  }
+}
+@media (max-width: 499px){
+  .section-1 .row .col-md-6 .panel{
+    top: -70vmin;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 412px){
+  .section-1 .row .col-md-6 .panel{
+    top: -99vmin;
+  }
+}
+
+@media (max-width: 360px){
+  .section-1 .row .col-md-6 .panel{
+    top: -112vmin;
+  }
+}
+
+
+
 /* fin contenedor de texto */
 
 
@@ -187,6 +311,25 @@ body {
   transform: scale(1.5);
 }
 
+@media (max-width: 991px){
+  .col-md-4{
+    display: flex;
+  }
+}
+
+@media (max-width: 767px){
+  .col-md-4{
+    margin: 5px;
+    padding: 0;
+    width: 31%;
+  }
+}
+
+@media (max-width: 499px){
+  .card-text{
+    display: none;
+  }
+}
 /* tarjetas de informacion */
 
 
@@ -201,6 +344,14 @@ body {
 
 
 /* seccion texto con planeta */
+.seccion-planeta{
+  width: 100%;
+}
+
+.contenedor-planeta{
+  width: 100%;
+}
+
 .encabezado {
   width: 800px;
   height: 200px;
@@ -292,7 +443,7 @@ td {
 /* estilos para el planeta */
 .planeta {
   width: 45%;
-  height: 700px;
+  height: auto;
   display: flex;
 
 }
