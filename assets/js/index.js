@@ -1,3 +1,9 @@
+//codigo para el menu hambuguer
+const hamburguer = document.querySelector('.hamburguer');
+hamburguer.addEventListener('click', function () {
+    this.classList.toggle('is-active');
+})
+
 //CODIGO PARA EL CAROUSEL
 const carousel = document.querySelector("#carousel");
 let sliderSection = document.querySelectorAll(".slider-div");

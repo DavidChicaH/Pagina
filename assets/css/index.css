@@ -11,6 +11,10 @@
   list-style: none;
 }
 
+
+html{
+  overflow-x: hidden;
+}
 /* fin del estilo global */
 
 
@@ -18,56 +22,149 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #fefefe;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
 
 /* estilo cuerpo de la pagina */
 
 
 /* menú navegación */
-.navbar {
-  height: 70px;
+header{
   width: 100%;
-  display: flex;
-  justify-content: center;
+  height: auto;
+  align-items: center;
   padding-bottom: 0;
 }
 
-.navbar__logo img {
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #fff;
+  padding: 16px 32px;
+  border-bottom: 3px solid #0c320c;
+  gap: 2;
+}
+
+.navbar {
+  display: none;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  margin: 0 -16px;
+  
+}
+
+.navbar a {
+  color: #0c320c;
+  font-size: 18px;
+  margin: 0 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.4s;
+  padding: 8px 16px;
+  border-radius: 99px;
+ }
+
+ .navbar a.is-active, .navbar a:hover {
+  background-color: #3d4f21;
+  color: #fff;
+ }
+.logo img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   vertical-align: 0;
+  display: flex;
+  padding: 0 0 0 0px;
 }
-
-.navbar__ul i {
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
-  color: #0e0e0e;
+/*menu hamburguesa*/
+.hamburguer {
+  display: block;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
   cursor: pointer;
 }
 
-.navbar__ul {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-}
-
-.navbar__li a {
-  color: #0e0e0e;
-  font-size: 20px;
-  font-family: "Source Sans Pro";
-  text-decoration: none;
-}
-
-.navbar__li a:hover {
-  color: #fff;
+.hamburguer span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 5px;
   background-color: #3d4f21;
-  border-radius: 20px;
-  padding: 10px 16px;
-  transition: 0.3s;
+  border-radius: 6px;
+  z-index: 1;
+  transform-origin: 0 0;
+  transition: 0.4s;
 }
 
+.hamburguer:hover span:nth-child(2)  {
+transform: translateX(10px);
+background-color: #908f61;
+}
+.hamburguer:hover span:nth-child(3)  {
+  transform: translateX(-10px);
+  background-color: #908f61;
+  }
+
+.hamburguer.is-active span:nth-child(2){
+  transform: translate(5px, -6px) rotate(45deg);
+}
+
+.hamburguer.is-active span:nth-child(3){
+  transform: translate(6px, 8px) rotate(-45deg);
+}
+.hamburguer.is-active span:nth-child(1){
+  opacity: 0;
+  transform: translateX(15px);
+}
+.hamburguer.is-active span:nth-child(4){
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+@media (min-width: 768px){
+  .hamburguer {
+    display:none;
+  }
+  .navbar li {
+    display: flex;
+    
+  }
+
+  .txtHead__div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .txtHead__h1 {
+    font-size: 4em;
+  }
+  .txtHead__p {
+    font-size: 20px;
+  }
+  
+  .section-1 .row .col-md-6 .panel {
+    position: absolute;
+  }
+  .section-1 .row .col-md-6 .panel {
+    padding: 30px 40px;
+  }
+ 
+}
+/* fin menú hamburguesa */
 /* fin menú navegación */
 
 
@@ -100,14 +197,15 @@ body {
 }
 
 .txtHead__p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
 .txtHead__h1 {
   margin: 20px 0;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 600;
+  text-align: center;
  
 }
 
@@ -134,7 +232,7 @@ body {
 
 .section-1 .row .col-md-6 .pray img {
   opacity: 0.8;
-  width: 80%;
+  width: 15em;
   border-radius: 1em;
 }
 
@@ -143,10 +241,10 @@ body {
 }
 
 .section-1 .row .col-md-6 .panel {
-  position: absolute;
+  
   top: 7vmin;
   left: -18vmin;
-  background: white;
+  background: #fff;
   border-radius: 10px;
   text-align: left;
   padding: 10vmin 10vmin 15vmin 10vmin;
@@ -165,6 +263,7 @@ body {
   font-size: 0.9em;
   color: #0c320c;
 }
+
 
 /* fin contenedor de texto */
 
@@ -187,6 +286,8 @@ body {
   transform: scale(1.5);
 }
 
+
+
 /* tarjetas de informacion */
 
 
@@ -201,28 +302,39 @@ body {
 
 
 /* seccion texto con planeta */
+.seccion-planeta{
+  width: 80%;
+}
+
+.contenedor-planeta{
+  width: 80%;
+}
+
 .encabezado {
-  width: 800px;
-  height: 200px;
-  float: left;
+
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
 
 }
 
 .encabezado h2 {
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  margin-top: 65px;
   font-weight: bold;
   color: #3d4f21;
-  font-size: 60px;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5px ;
 
 }
 
 .boton-encabezado {
-  width: 800px;
-  height: 200px;
-  float: right;
+  width: 100%;
+  height: 20%;
+  
 
 }
 
@@ -230,7 +342,7 @@ body {
   width: 50%;
   height: 30%;
   margin-left: 25%;
-  margin-top: 75px;
+  margin-top: 5em;
   background-color: #f9f9f6;
   border-radius: 30px;
   border: 3px solid #3d4f21;
@@ -246,24 +358,21 @@ body {
 }
 
 .sedes {
-  width: 55%;
-  height: 700px;
-  display: block;
-  justify-content: center;
+  width: 100%;
   text-align: center;
-  float: left;
+  
 }
 
 .sedes p {
-  padding: 70px;
   font-size: 20px;
+  margin: 20 5px;
 }
 
 .tabla-sedes {
-  width: 70%;
-  height: 40%;
+  margin: 10px 2px;
+  width: 80%;
+  height: 50%;
   margin: auto;
-  display: flex;
 }
 
 .tabla-sedes button {
@@ -279,7 +388,6 @@ body {
 table {
   width: 100%;
   height: 50%;
-  margin-top: 100px;
 }
 
 table,
@@ -290,17 +398,34 @@ td {
 
 
 /* estilos para el planeta */
-.planeta {
-  width: 45%;
-  height: 700px;
+
+.contenedor-planeta {
+  width: 80%;
+  
+  margin: auto;
+  margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+}
+.seccion-planeta {
+  display: flex;
+  justify-content: center;
+}
+.planeta {
+  width: 80%;
+  height: auto;
+ 
 
 }
 
+
+
 .planet {
-  width: 400px;
-  height: 400px;
+
+  width: 13em;
+  height: 13em;
   margin: auto;
+  margin-top: 10px;
   border-radius: 50%;
   background: url("../img/planeta.png");
   background-size: cover;
@@ -387,15 +512,6 @@ td {
   text-align: center;
   font-size: 13px;
   color: #0c320c;
-}
-
-.contenedor-planeta {
-  width: 1600px;
-  height: 900px;
-  margin: auto;
-
-  margin-bottom: 20px;
-
 }
 
 /* fin del footer */
