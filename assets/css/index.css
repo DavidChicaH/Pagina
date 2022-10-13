@@ -97,37 +97,57 @@ header label:hover{
   transition: 0.3s;
 }
 
-@media (max-width: 552px){
-header label{
-  display: block;
-}
-
-.navbar{
-  position: absolute; 
-  background: #fff;
-  width: 60%;
-  margin-left: -70%;
-  transition: all 1s;
-  border-bottom-right-radius: 10px;
-}
-
-.navbar__ul{
-  flex-direction: column;
-}
-
-.navbar__li{
-  border-bottom: 1px solid #3d4f21;
-}
-
-.navbar__logo{
+.hamburguer{
   display: none;
+  cursor: pointer;
 }
 
-#btn-menu:checked ~ .navbar{
-  margin: 0;
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #3d4f21;
 }
 
+@media(max-width: 768px){
+  .hamburguer{
+    display: block;
+  }
+  .hamburguer.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburguer.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburguer.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar__ul{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navbar__li{
+    margin: 16px 0;
+  }
+
+  .navbar__ul.active{
+    left: 0;
+  }
+  
 }
+
 
 /* fin menú navegación */
 

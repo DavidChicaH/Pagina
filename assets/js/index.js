@@ -69,3 +69,11 @@ document.querySelector(".go-top-container")
 // utilizar esta linea para ver cuantos pixeles ha bajado
 
 //FIN DEL CODIGO PARA EL BOTON SUBIR
+
+const hamburguer = document.querySelector(".hamburguer");
+const navMenu = document.querySelector(".navbar__ul");
+
+hamburguer.addEventListener("click", () => {
+    hamburguer.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
