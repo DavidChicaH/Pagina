@@ -36,11 +36,6 @@ header{
   height: auto;
 }
 
-#btn-menu{
-  display: none;
-  height: auto;
-}
-
 
 header label{
   display: none;
@@ -126,6 +121,15 @@ header label:hover{
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .hamburguer:hover span:nth-child(2)  {
+    transform: translateX(10px);
+    background-color: #908f61;
+    }
+    .hamburguer:hover span:nth-child(3)  {
+      transform: translateX(-10px);
+      background-color: #908f61;
+      }
+
   .navbar__ul{
     position: fixed;
     left: -100%;
@@ -144,6 +148,10 @@ header label:hover{
 
   .navbar__ul.active{
     left: 0;
+  }
+
+  .navbar__logo{
+    margin-right: 50px;
   }
   
 }
