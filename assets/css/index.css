@@ -158,9 +158,11 @@ background-color: #908f61;
   
   .section-1 .row .col-md-6 .panel {
     position: absolute;
-  }
-  .section-1 .row .col-md-6 .panel {
     padding: 30px 40px;
+  }
+  
+  .sedes {
+    width: 70%;
   }
  
 }
@@ -278,7 +280,7 @@ background-color: #908f61;
 }
 
 .inner img {
-  transition: all 1.5s ease;
+  transition: all .8s ease;
   margin: 0%;
 }
 
@@ -302,17 +304,10 @@ background-color: #908f61;
 
 
 /* seccion texto con planeta */
-.seccion-planeta{
-  width: 80%;
-}
 
-.contenedor-planeta{
-  width: 80%;
-}
 
 .encabezado {
 
-  width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -325,100 +320,86 @@ background-color: #908f61;
   color: #3d4f21;
   font-size: 3em;
   display: flex;
-  justify-content: center;
   text-align: center;
-  margin: 5px ;
-
+justify-content: center;
+width: 100%;
 }
 
-.boton-encabezado {
-  width: 100%;
-  height: 20%;
-  
-
-}
 
 .boton-encabezado button {
-  width: 50%;
-  height: 30%;
-  margin-left: 25%;
-  margin-top: 5em;
+  font-size: 20px;
   background-color: #f9f9f6;
-  border-radius: 30px;
-  border: 3px solid #3d4f21;
-  font-weight: bold;
+  border-radius: 40px;
+  border: 2px solid #3d4f21;
   color: #3d4f21;
+  padding: 15px 50px;
 }
 
 .boton-encabezado button:hover,
 .tabla-sedes button:hover {
   background-color: #3d4f21;
-  box-shadow: 0 0 15px 5px #3d4f21;
+  box-shadow: 0 0 8px 2px #3d4f21;
   color: #fff;
 }
 
 .sedes {
-  width: 100%;
-  text-align: center;
   
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .sedes p {
   font-size: 20px;
-  margin: 20 5px;
+  margin: 25px 5px;
+
 }
+
 
 .tabla-sedes {
   margin: 10px 2px;
-  width: 80%;
-  height: 50%;
-  margin: auto;
 }
 
 .tabla-sedes button {
-  width: 90%;
-  height: 90%;
   background-color: #f9f9f6;
   border-radius: 30px;
-  border: 3px solid #3d4f21;
+  border: 1px solid #0c320c;
   font-weight: bold;
   color: #3d4f21;
+  margin: 5px 10px;
+  padding: 16px 50px;
 }
 
-table {
-  width: 100%;
-  height: 50%;
-}
+
 
 table,
 tr,
 td {
   border: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
 /* estilos para el planeta */
 
 .contenedor-planeta {
-  width: 80%;
-  
-  margin: auto;
-  margin-bottom: 20px;
+  width: 50%;
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
 .seccion-planeta {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .planeta {
-  width: 80%;
-  height: auto;
- 
+  width: 100%;
+  margin: 20px;
 
 }
-
-
 
 .planet {
 
@@ -430,9 +411,6 @@ td {
   background: url("../img/planeta.png");
   background-size: cover;
   position: relative;
-  box-shadow: inset 0 0 20px #000,
-    inset -40px -10px 20px rgba(3, 32, 56, 0.7);
-
   animation: planetmove 5s linear infinite;
 }
 
@@ -531,8 +509,8 @@ h3 {
   max-width: 900px;
   margin: auto;
   overflow: hidden;
-  box-shadow: 0 0 0 10px #14301f,
-    0 15px 50px;
+  box-shadow: 0 0 0 0 #0c320c,
+    0 0 10px;
   position: relative;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -563,6 +541,7 @@ h3 {
   width: 40px;
   height: 40px;
   background-color: #908f61;
+  color: #fff;
   top: 50%;
   transform: translateY(-50%);
   font-size: 30px;
@@ -575,6 +554,7 @@ h3 {
 
 .carousel_btn:hover {
   background-color: #f9f9f6;
+  color: #0c320c;
 }
 
 .btn-right {
@@ -625,9 +605,9 @@ h3 {
 }
 
 .show .go-top-btn {
-  animation: popup .3s ease-in-out;
-  width: 6.6rem;
-  height: 6.6rem;
+  animation: popup .4s ;
+  width: 4rem;
+  height: 4rem;
   z-index: 11;
 }
 
