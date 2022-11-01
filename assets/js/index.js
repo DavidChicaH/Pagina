@@ -1,4 +1,6 @@
 //CODIGO PARA EL CAROUSEL
+
+/*
 const carousel = document.querySelector("#carousel");
 let sliderSection = document.querySelectorAll(".slider-div");
 let sliderLast = sliderSection[sliderSection.length - 1];
@@ -43,6 +45,7 @@ leftBtn.addEventListener('click', function () {
 setInterval(function () {
     moveRight();
 }, 5000);
+*/
 
 //FIN DEL CODIGO DE CAROUSEL
 
