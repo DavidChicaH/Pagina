@@ -267,7 +267,15 @@ header label:hover{
 
 /* tarjetas de informacion */
 .container {
+  width: 100%;
   margin-top: 8%;
+}
+
+.col-md-4 {
+  min-width: 30%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .inner {
@@ -283,25 +291,6 @@ header label:hover{
   transform: scale(1.5);
 }
 
-@media (max-width: 991px){
-  .col-md-4{
-    display: flex;
-  }
-}
-
-@media (max-width: 767px){
-  .col-md-4{
-    margin: 5px;
-    padding: 0;
-    width: 31%;
-  }
-}
-
-@media (max-width: 499px){
-  .card-text{
-    display: none;
-  }
-}
 /* tarjetas de informacion */
 
 

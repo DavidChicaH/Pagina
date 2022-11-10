@@ -51,6 +51,7 @@ setInterval(function () {
 
 
 //CODIGO PARA EL BOTON SUBIR
+/*
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 3000) {
         document.querySelector(".go-top-container")
@@ -67,7 +68,7 @@ document.querySelector(".go-top-container")
             top: 0,
             behavior: "smooth"
         });
-    });
+    });*/
 // console.log(document.documentElement.scrollTop)
 // utilizar esta linea para ver cuantos pixeles ha bajado
 
