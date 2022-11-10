@@ -226,7 +226,7 @@ header label:hover{
 
 .section-1 .row .col-md-6 .pray img {
   opacity: 0.8;
-  width: 80%;
+  width: 15em;
   border-radius: 1em;
 }
 
@@ -235,10 +235,10 @@ header label:hover{
 }
 
 .section-1 .row .col-md-6 .panel {
-  position: absolute;
+  
   top: 7vmin;
   left: -18vmin;
-  background: white;
+  background: #fff;
   border-radius: 10px;
   text-align: left;
   padding: 10vmin 10vmin 15vmin 10vmin;
@@ -259,65 +259,6 @@ header label:hover{
 }
 
 
-
-
-@media (max-width: 1199px){
-  .section-1 .row .col-md-6 .panel{
- top: 0;
- padding: 25px;
-  }
-  .section-1 .row .col-md-6 .panel h1{
-    font-size: 1.7em;
-    padding: 0;
-  }
-}
-@media (max-width: 991px){
-  .section-1 .row .col-md-6 .panel{
-    display: block;
-     }
-     .section-1 .row .col-md-6 .panel p {
-      font-size: 0.8em;
- 
-    }
-}
-
-@media (max-width: 767px){
-
- .section-1 .row .col-md-6 .panel{
-  top: -53vmin;
-  left: 0;
- }
-}
-
-@media (max-width: 645px){
-  .section-1 .row .col-md-6 .panel{
-    top: -60vmin;
-  }
-}
-
-@media (max-width: 542px){
-  .section-1 .row .col-md-6 .panel{
-    top: -70vmin;
-  }
-}
-@media (max-width: 499px){
-  .section-1 .row .col-md-6 .panel{
-    top: -70vmin;
-    display: inline-block;
-  }
-}
-
-@media (max-width: 412px){
-  .section-1 .row .col-md-6 .panel{
-    top: -99vmin;
-  }
-}
-
-@media (max-width: 360px){
-  .section-1 .row .col-md-6 .panel{
-    top: -112vmin;
-  }
-}
 
 
 
