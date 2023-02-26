@@ -1,0 +1,29 @@
+@use "preSettings";
+
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 1vh;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  outline: 0;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #3d4f21;
+  color: #f9f9f6;
+  border: 0;
+  transition: all .3s ease-in-out;
+    &:hover{
+      background-color: #f9f9f6;
+      color: #3d4f21;
+      border: 3px solid #3d4f21;
+    }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

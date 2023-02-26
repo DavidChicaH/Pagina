@@ -1,0 +1,60 @@
+@use "preSettings";
+/* imagen principal */
+.txtHead {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/plantas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtHead__div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+
+.txtHead__h1,
+.txtHead__p {
+  color: #fff;
+  animation: bounceInUp;
+  animation-duration: 3s;
+}
+
+.txtHead__p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.txtHead__h1 {
+  margin: 20px 0;
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+.txtHead__boton {
+  background-color: #fefefe;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 12px 45px;
+
+  &:hover {
+    background-color: #dfdfdfee;
+  }
+
+  a {
+    text-decoration: none;
+    color: #0e0e0e;
+    
+  }
+}
+
+/* fin imagen principal */

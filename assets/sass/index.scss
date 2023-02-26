@@ -1,0 +1,21 @@
+@use "preSettings"; //Diseño general del cuerpo de la página
+
+@use "navigationMenu"; // Estilos, menu de navegacion
+
+@use "head"; //Estilos para imagen de cabecera
+
+@use "misionVision"; //Estilo para seccion de mision y vision
+
+@use "cards"; // Estilo para las tarjetas
+
+@use "planet"; //Estilos de la seccion del planeta
+
+@use "footer"; // Estilos del pie de pagina
+
+@use "scrollBtn"; //Estilos para boton de scroll
+
+/* 
+Para compilar de scss a css usar el siguiente comando
+
+sass --watch assets/sass/index.scss:assets/css/index.css
+*/

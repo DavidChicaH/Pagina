@@ -1,0 +1,29 @@
+@use "preSettings";
+/* tarjetas de informacion */
+.container {
+  width: 100%;
+  margin-top: 8%;
+}
+
+.col-md-4 {
+  min-width: 30%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  overflow: hidden;
+
+  img {
+    transition: all 1.5s ease;
+    margin: 0%;
+  }
+
+  &:hover img {
+    transform: scale(1.5);
+  }
+}
+
+
+/* tarjetas de informacion */

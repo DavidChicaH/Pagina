@@ -1,0 +1,57 @@
+/*Variables*/
+
+/* tipo de letra */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
+
+
+/* estilo delcontenido global de la pagina*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+html {
+  overflow-x: hidden;
+}
+
+/* fin del estilo global */
+
+
+/* estilo cuerpo de la pagina */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fefefe;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+//Linea separadora
+.line {
+  width: 80%;
+  margin: 10px auto 20px;
+  border-bottom: 1px solid gray;
+}
+
+//Diseñno botones
+
+@mixin botones {
+  font-size: 20px;
+  background-color: #f9f9f6;
+  border-radius: 40px;
+  border: 2px solid #3d4f21;
+  color: #3d4f21;
+  padding: 15px 50px;
+  margin-bottom: 20px;
+}
+
+@mixin botones-hover{
+  background-color: #3d4f21;
+  box-shadow: 0 0 8px 2px #3d4f21;
+  color: #fff;
+}
+

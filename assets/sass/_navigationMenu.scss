@@ -1,0 +1,136 @@
+@use "preSettings";
+
+
+/* menú navegación */
+header {
+  width: 100%;
+  height: auto;
+
+  label {
+    display: none;
+    width: 30px;
+    height: auto;
+    padding: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.navbar {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+
+  .navbar__logo {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      vertical-align: 0;
+    }
+  }
+}
+
+.navbar__ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+
+  i {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: #0e0e0e;
+    cursor: pointer;
+  }
+}
+
+.navbar__li {
+  a {
+    color: #0e0e0e;
+    font-size: 20px;
+    font-family: "Source Sans Pro";
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      background-color: #3d4f21;
+      border-radius: 20px;
+      padding: 10px 16px;
+      transition: 0.3s;
+    }
+  }
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #3d4f21;
+}
+
+@media (max-width: 768px) {
+  .hamburguer {
+    display: block;
+  }
+
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hamburguer:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: #908f61;
+  }
+
+  .hamburguer:hover span:nth-child(3) {
+    transform: translateX(-10px);
+    background-color: #908f61;
+  }
+
+  .navbar__ul {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navbar__li {
+    margin: 16px 0;
+  }
+
+  .navbar__ul.active {
+    left: 0;
+  }
+
+  .navbar__logo {
+    margin-right: 50px;
+  }
+}
+
+/* fin menú navegación */

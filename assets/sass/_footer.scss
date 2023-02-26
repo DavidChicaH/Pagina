@@ -1,0 +1,65 @@
+@use "preSettings";
+/* footer */
+.footer {
+  padding: 40px 0;
+  background-color: #908f9061;
+
+  .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #3d4f21;
+
+    a {
+      font-size: 24px;
+      color: inherit;
+      border: 1px solid #3d4f21;
+      width: 40px;
+      height: 40px;
+      line-height: 38px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      margin: 0 8px;
+      opacity: 0.75;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: 0 15px;
+
+      a{
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #0c320c;
+  }
+}
+
+
+/* fin del footer */

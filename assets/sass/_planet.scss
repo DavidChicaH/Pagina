@@ -1,0 +1,98 @@
+@use "preSettings" as s;
+/* seccion texto con planeta */
+.seccion-planeta {
+  width: 100%;
+}
+
+.contenedor-planeta {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado-planeta {
+  margin: auto 10px;
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+.boton-encabezado-planeta {
+  display: flex;
+
+  button {
+    @include s.botones;
+    &::hover {
+      @include s.botones-hover;
+    }
+  }
+}
+
+
+.tabla-botones-planeta button:hover {
+ @include s.botones-hover;
+}
+
+.sedes-planeta {
+
+  p {
+    padding: 30px;
+    text-align: center;
+  }
+  
+}
+
+.tabla-botones-planeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background-color: #f9f9f6;
+    border-radius: 30px;
+    border: 1px solid #0c320c;
+    font-weight: bold;
+    color: #3d4f21;
+    margin: 5px 10px;
+    padding: 16px 50px;
+  }
+}
+
+/*
+.encabezado {
+
+/* estilos para el planeta */
+
+.planeta {
+  width: 100%;
+  margin: 20px;
+}
+
+.planet {
+  width: 13em;
+  height: 13em;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50%;
+  background: url("../img/planeta.png");
+  background-size: cover;
+  position: relative;
+  animation: planetmove 5s linear infinite;
+}
+
+/* animacion del paneta */
+@keyframes planetmove {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -800px;
+  }
+}

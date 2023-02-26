@@ -1,7 +1,7 @@
+@charset "UTF-8";
+/*Variables*/
 /* tipo de letra */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
-
-
 /* estilo delcontenido global de la pagina*/
 * {
   margin: 0;
@@ -11,14 +11,11 @@
   list-style: none;
 }
 
-
 html {
   overflow-x: hidden;
 }
 
 /* fin del estilo global */
-
-
 /* estilo cuerpo de la pagina */
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -28,23 +25,23 @@ body {
   overflow-x: hidden;
 }
 
-/* estilo cuerpo de la pagina */
-
+.line {
+  width: 80%;
+  margin: 10px auto 20px;
+  border-bottom: 1px solid gray;
+}
 
 /* menú navegación */
 header {
   width: 100%;
   height: auto;
 }
-
-
 header label {
   display: none;
   width: 30px;
   height: auto;
   padding: 10px;
 }
-
 header label:hover {
   cursor: pointer;
 }
@@ -56,14 +53,18 @@ header label:hover {
   justify-content: center;
   padding-bottom: 0;
 }
-
-.navbar__logo img {
+.navbar .navbar__logo img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   vertical-align: 0;
 }
 
+.navbar__ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
 .navbar__ul i {
   width: 30px;
   height: 30px;
@@ -72,19 +73,12 @@ header label:hover {
   cursor: pointer;
 }
 
-.navbar__ul {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-}
-
 .navbar__li a {
   color: #0e0e0e;
   font-size: 20px;
   font-family: "Source Sans Pro";
   text-decoration: none;
 }
-
 .navbar__li a:hover {
   color: #fff;
   background-color: #3d4f21;
@@ -108,33 +102,27 @@ header label:hover {
   background-color: #3d4f21;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .hamburguer {
     display: block;
   }
-
   .hamburguer.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburguer.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburguer.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
   .hamburguer:hover span:nth-child(2) {
     transform: translateX(10px);
     background-color: #908f61;
   }
-
   .hamburguer:hover span:nth-child(3) {
     transform: translateX(-10px);
     background-color: #908f61;
   }
-
   .navbar__ul {
     position: fixed;
     left: -100%;
@@ -146,27 +134,17 @@ header label:hover {
     text-align: center;
     transition: 0.3s;
   }
-
   .navbar__li {
     margin: 16px 0;
   }
-
   .navbar__ul.active {
     left: 0;
   }
-
   .navbar__logo {
     margin-right: 50px;
   }
-
 }
-
-
 /* fin menú navegación */
-
-
-/* imagen principal */
-
 /* imagen principal */
 .txtHead {
   width: 100%;
@@ -205,7 +183,6 @@ header label:hover {
   font-size: 3em;
   font-weight: 600;
   text-align: center;
-
 }
 
 .txtHead__boton {
@@ -214,21 +191,16 @@ header label:hover {
   margin: 20px;
   padding: 12px 45px;
 }
-
+.txtHead__boton:hover {
+  background-color: rgba(223, 223, 223, 0.9333333333);
+}
 .txtHead__boton a {
   text-decoration: none;
   color: #0e0e0e;
 }
 
-.txtHead__boton:hover {
-  background-color: #dfdfdfee;
-}
-
 /* fin imagen principal */
-
-
 /* contenedor de texto misión, visión */
-
 .section-1 .row .col-md-6 .pray img {
   opacity: 0.8;
   width: 100%;
@@ -242,7 +214,6 @@ header label:hover {
 }
 
 .section-1 .row .col-md-6 .panel {
-
   top: 7vmin;
   left: -18vmin;
   background: #fff;
@@ -267,13 +238,6 @@ header label:hover {
   color: #0c320c;
 }
 
-
-
-
-
-/* fin contenedor de texto */
-
-
 /* tarjetas de informacion */
 .container {
   width: 100%;
@@ -290,29 +254,15 @@ header label:hover {
 .inner {
   overflow: hidden;
 }
-
 .inner img {
   transition: all 1.5s ease;
   margin: 0%;
 }
-
 .inner:hover img {
   transform: scale(1.5);
 }
 
 /* tarjetas de informacion */
-
-
-/* linea separador */
-.line {
-  width: 80%;
-  margin: 10px auto 20px;
-  border-bottom: 1px solid gray;
-}
-
-/* fin linea separador */
-
-
 /* seccion texto con planeta */
 .seccion-planeta {
   width: 100%;
@@ -330,7 +280,6 @@ header label:hover {
 .encabezado-planeta {
   margin: auto 10px;
 }
-
 .encabezado-planeta h2 {
   text-align: center;
   font-size: 50px;
@@ -339,7 +288,6 @@ header label:hover {
 .boton-encabezado-planeta {
   display: flex;
 }
-
 .boton-encabezado-planeta button {
   font-size: 20px;
   background-color: #f9f9f6;
@@ -349,8 +297,12 @@ header label:hover {
   padding: 15px 50px;
   margin-bottom: 20px;
 }
+.boton-encabezado-planeta button::hover {
+  background-color: #3d4f21;
+  box-shadow: 0 0 8px 2px #3d4f21;
+  color: #fff;
+}
 
-.boton-encabezado-planeta button:hover,
 .tabla-botones-planeta button:hover {
   background-color: #3d4f21;
   box-shadow: 0 0 8px 2px #3d4f21;
@@ -367,9 +319,7 @@ header label:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-
 .tabla-botones-planeta button {
   background-color: #f9f9f6;
   border-radius: 30px;
@@ -378,24 +328,18 @@ header label:hover {
   color: #3d4f21;
   margin: 5px 10px;
   padding: 16px 50px;
-
 }
-
 
 /*
 .encabezado {
 
 /* estilos para el planeta */
-
-
 .planeta {
   width: 100%;
   margin: 20px;
-
 }
 
 .planet {
-
   width: 13em;
   height: 13em;
   margin: auto;
@@ -412,30 +356,20 @@ header label:hover {
   0% {
     background-position-x: 0;
   }
-
   100% {
     background-position-x: -800px;
   }
 }
-
-*/
-/* fin estilos para el planeta */
-
-/* seccion texto con planeta */
-
-
 /* footer */
 .footer {
   padding: 40px 0;
-  background-color: #908f9061;
+  background-color: rgba(144, 143, 144, 0.3803921569);
 }
-
 .footer .social {
   text-align: center;
   padding-bottom: 25px;
   color: #3d4f21;
 }
-
 .footer .social a {
   font-size: 24px;
   color: inherit;
@@ -449,11 +383,9 @@ header label:hover {
   margin: 0 8px;
   opacity: 0.75;
 }
-
 .footer .social a:hover {
   opacity: 0.9;
 }
-
 .footer ul {
   margin-top: 0;
   padding: 0;
@@ -463,22 +395,18 @@ header label:hover {
   margin-bottom: 0;
   text-align: center;
 }
-
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
 .footer ul li a {
   color: inherit;
   text-decoration: none;
   opacity: 0.8;
 }
-
-.footer ul li {
-  display: inline-block;
-  padding: 0 15px;
-}
-
-.footer .ul li a:hover {
+.footer ul li a:hover {
   opacity: 1;
 }
-
 .footer .copyright {
   margin-top: 15px;
   text-align: center;
@@ -487,142 +415,38 @@ header label:hover {
 }
 
 /* fin del footer */
-
-
-/* CSS PARA EL CAROUSEL*/
-h3 {
-  text-align: center;
-  justify-content: center;
-  color: #0c320c;
-  font-weight: bold;
-  font-size: 60px;
-}
-
-.carousel-section {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-  overflow: hidden;
-  box-shadow: 0 0 0 10px #14301f,
-    0 15px 50px;
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-
-.carousel {
-  display: flex;
-  width: 400%;
-  height: 400px;
-  margin-left: -100%;
-}
-
-
-.slider-div {
-  width: 100%;
-}
-
-.img_slider {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel_btn {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: #908f61;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  font-weight: bold;
-  font-family: monospace;
-  text-align: center;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.carousel_btn:hover {
-  background-color: #f9f9f6;
-}
-
-.btn-right {
-  right: 10px;
-}
-
-.btn-left {
-  left: 10px;
-}
-
-/*FIN DEL CSS PARA EL CAROUSEL*/
-
-
-/*CSS PARA EL BOTON DE SUBIR*/
-.go-top-container {
+.scroll-top-btn {
   position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  width: 6.6rem;
-  height: 6.6rem;
-  z-index: -1;
-}
-
-.go-top-btn {
-  width: 0rem;
-  height: 0rem;
-  background: #3d4f21;
+  z-index: 999;
+  bottom: 1vh;
+  right: 1vh;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
+  font-size: 2rem;
+  outline: 0;
   cursor: pointer;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+  font-weight: bold;
+  background-color: #3d4f21;
+  color: #f9f9f6;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+}
+.scroll-top-btn:hover {
+  background-color: #f9f9f6;
+  color: #3d4f21;
+  border: 3px solid #3d4f21;
 }
 
-.go-top-btn i {
-  position: absolute;
-  font-size: 1.7rem;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  color: #fff;
-  transition: .2s;
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
-.show {
-  z-index: 10;
-}
+/* 
+Para compilar de scss a css usar el siguiente comando
 
-.show .go-top-btn {
-  animation: popup .3s ease-in-out;
-  width: 6.6rem;
-  height: 6.6rem;
-  z-index: 11;
-}
+sass --watch assets/sass/index.scss:assets/css/index.css
+*/
 
-.show i {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-/* animacion del boton para volver al inicio */
-@keyframes popup {
-  0% {
-    width: 0rem;
-    height: 0rem;
-  }
-
-  50% {
-    width: 8rem;
-    height: 8rem;
-  }
-
-  100% {
-    width: 6.6rem;
-    height: 6.6rem;
-  }
-}
-
-/*FIN DEL CSS PARA EL BOTON SUBIR*/
+/*# sourceMappingURL=index.css.map */
