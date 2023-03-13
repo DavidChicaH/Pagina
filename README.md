@@ -39,10 +39,10 @@ La pagina web que desarrollamos consta de una vista simple de una pagina sobre *
 
 ### Desktop
 
-![Desktop Preview]()
+![Desktop Preview]([Preview-Desktop.png](https://postimg.cc/kBtNF9dm))
 
 ---
 
 ### Phone
 
-![Phone preview]()
+![Phone preview]([![phone-Review-Img.jpg](https://i.postimg.cc/MK6sgjYC/phone-Review-Img.jpg)](https://postimg.cc/XXPcCqmL))
