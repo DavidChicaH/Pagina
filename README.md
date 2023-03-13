@@ -39,7 +39,7 @@ La pagina web que desarrollamos consta de una vista simple de una pagina sobre *
 
 ### Desktop
 
-[Preview-Desktop.png](https://postimg.cc/kBtNF9dm)
+[![Preview-Desktop.png](https://i.postimg.cc/7YKB4Ysf/Preview-Desktop.png)](https://postimg.cc/kBtNF9dm)
 
 ---
 
